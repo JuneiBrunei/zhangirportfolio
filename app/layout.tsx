@@ -18,18 +18,16 @@ export const metadata: Metadata = {
   verification: {
     google: "_idbf5d7Gn3BBKcSsd23bg8Ew8643idePhTSZ856yXc", 
   },
+  icons: {
+    icon: "/favicon.ico?v=2",  // добавляем версию для обновления кэша
+  },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* Указываем favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico?v=2" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
