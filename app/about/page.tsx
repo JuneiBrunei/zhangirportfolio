@@ -96,6 +96,30 @@ export default function AboutMe() {
 
         </div>
 
+        {/* Vibe Coding Section */}
+<div className="md:col-span-2 mt-7 p-8 rounded-[2.5rem] bg-indigo-50 border border-indigo-100 flex flex-col justify-between group">
+  <div className="flex justify-between items-start mb-4">
+    <span className="text-3xl">💻</span>
+    <span className="text-[10px] font-bold text-indigo-400 uppercase tracking-widest">Vibe Coding</span>
+  </div>
+  <div>
+    <h2 className="text-2xl font-black text-indigo-900 uppercase italic leading-tight mb-2">
+      My Coding Experiments
+    </h2>
+    <p className="text-sm text-indigo-700 leading-relaxed mb-4">
+      Some of my coding projects. Click any link to explore.
+    </p>
+    <div className="flex flex-col gap-2">
+      <Link
+        href="https://fin-game-three.vercel.app"
+        className="text-indigo-800 font-semibold text-sm underline hover:text-indigo-900 transition"
+      >
+        📊 Financial Literacy Game
+      </Link>
+      {/* В будущем можно добавить новые ссылки так же */}
+    </div>
+  </div>
+</div>
         <footer className="mt-20 text-center text-[10px] font-mono text-slate-300 uppercase tracking-[0.5em]">
           • Character Unlocked •
         </footer>
