@@ -112,7 +112,7 @@ export default function Resume() {
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 mb-1">
                     <h3 className="text-xl sm:text-2xl font-bold uppercase italic leading-tight">Social Media Specialist</h3>
-                    <span className="text-xs font-mono font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded self-start">2025</span>
+                    <span className="text-xs font-mono font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded self-start">2026</span>
                   </div>
                   <p className="text-sm font-bold text-slate-500 uppercase tracking-widest font-mono">United Montefredente ASD</p>
                 </div>
