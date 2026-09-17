@@ -26,7 +26,7 @@ export default function AboutMe() {
             <div>
               <h2 className="text-2xl font-black text-sky-900 uppercase italic leading-tight mb-2">Manchester City</h2>
               <p className="text-sm text-sky-700 leading-relaxed">
-                Watching Pep’s masterclasses isn't just a hobby; it’s a lifestyle. Blue moon rising, always.
+                Watching City masterclasses isn't just a hobby; it’s a lifestyle. Blue moon rising, always.
               </p>
             </div>
           </div>
@@ -115,6 +115,18 @@ export default function AboutMe() {
         className="text-indigo-800 font-semibold text-sm underline hover:text-indigo-900 transition"
       >
         📊 Financial Literacy Game
+      </Link>
+      <Link
+        href="https://ars-logistics.vercel.app"
+        className="text-indigo-800 font-semibold text-sm underline hover:text-indigo-900 transition"
+      >
+        🚚 Ars Logistics
+      </Link>
+      <Link
+        href="https://makan-talgar.vercel.app"
+        className="text-indigo-800 font-semibold text-sm underline hover:text-indigo-900 transition"
+      >
+        🍽️ Makan Talgar
       </Link>
       {/* В будущем можно добавить новые ссылки так же */}
     </div>
