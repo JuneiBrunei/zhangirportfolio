@@ -98,21 +98,21 @@ export default function Resume() {
             <div className="relative border-l-2 border-slate-200 pl-6 sm:pl-8 ml-1">
               <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-[#fcfcfc]"></div>
               <div className="flex items-start gap-4 mb-1">
-                {/* Logo placeholder */}
-                <div className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center overflow-hidden">
-  <Image
-    src="/montefredente-logo.png"
-    alt="United Montefredente ASD logo"
-    width={56}
-    height={56}
-    className="object-contain"
-  />
-</div>
+                {/* Club logo */}
+                <div className="shrink-0 w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-white border border-slate-200 flex items-center justify-center p-1.5">
+                  <Image
+                    src="/montefredente-logo.png"
+                    alt="United Montefredente ASD logo"
+                    width={96}
+                    height={96}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
 
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 mb-1">
                     <h3 className="text-xl sm:text-2xl font-bold uppercase italic leading-tight">Social Media Specialist</h3>
-                    <span className="text-xs font-mono font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded self-start">2026</span>
+                    <span className="text-xs font-mono font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded self-start">2025</span>
                   </div>
                   <p className="text-sm font-bold text-slate-500 uppercase tracking-widest font-mono">United Montefredente ASD</p>
                 </div>
