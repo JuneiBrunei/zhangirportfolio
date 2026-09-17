@@ -1,38 +1,39 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Resume() {
   return (
     <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100">
-      <main className="max-w-3xl mx-auto px-6 py-12 animate-fade-in">
+      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 animate-fade-in">
         
         {/* Navigation */}
         <Link href="/" className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-8 block hover:opacity-70 transition-opacity">
           ← Back to Home
         </Link>
 
-        <header className="mb-12">
-          <h1 className="text-5xl font-black tracking-tight mb-2 uppercase italic">Resume</h1>
-          <p className="text-lg text-slate-500 italic">Academic path and professional qualifications.</p>
+        <header className="mb-10 sm:mb-12">
+          <h1 className="text-4xl sm:text-5xl font-black tracking-tight mb-2 uppercase italic">Resume</h1>
+          <p className="text-base sm:text-lg text-slate-500 italic">Academic path and professional qualifications.</p>
         </header>
 
         {/* Education Section */}
-        <section className="mb-12">
+        <section className="mb-10 sm:mb-12">
           <h2 className="text-xs font-bold text-slate-400 uppercase tracking-[0.3em] mb-6">Education</h2>
           <div className="space-y-8">
             
             {/* Università di Bologna */}
-            <div className="relative border-l-2 border-slate-200 pl-8 ml-1">
+            <div className="relative border-l-2 border-slate-200 pl-6 sm:pl-8 ml-1">
               <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-[#fcfcfc]"></div>
-              <h3 className="text-2xl font-bold uppercase italic leading-tight">Università di Bologna</h3>
-              <p className="text-base font-bold text-blue-600 mb-1 tracking-tighter uppercase">Bachelor in Economics and Finance • 2025 — 2028</p>
+              <h3 className="text-xl sm:text-2xl font-bold uppercase italic leading-tight">Università di Bologna</h3>
+              <p className="text-sm sm:text-base font-bold text-blue-600 mb-1 tracking-tighter uppercase">Bachelor in Economics and Finance • 2025 — 2028</p>
               <p className="text-slate-500 text-sm italic">Bologna, Italy</p>
             </div>
 
             {/* NIS */}
-            <div className="relative border-l-2 border-slate-200 pl-8 ml-1">
+            <div className="relative border-l-2 border-slate-200 pl-6 sm:pl-8 ml-1">
               <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-[#fcfcfc]"></div>
-              <h3 className="text-2xl font-bold uppercase italic leading-tight text-slate-700">Nazarbayev Intellectual School</h3>
-              <p className="text-base font-bold text-slate-500 mb-1 tracking-tighter uppercase font-mono">Physics and Mathematics • 2019 — 2025</p>
+              <h3 className="text-xl sm:text-2xl font-bold uppercase italic leading-tight text-slate-700">Nazarbayev Intellectual School</h3>
+              <p className="text-sm sm:text-base font-bold text-slate-500 mb-1 tracking-tighter uppercase font-mono">Physics and Mathematics • 2019 — 2025</p>
               <p className="text-slate-500 text-sm italic mb-4">Almaty, Kazakhstan</p>
               
               <div className="flex flex-wrap gap-2">
@@ -45,74 +46,105 @@ export default function Resume() {
         </section>
 
         {/* Leadership & Experience */}
-        <section className="mb-12">
+        <section className="mb-10 sm:mb-12">
           <h2 className="text-xs font-bold text-slate-400 uppercase tracking-[0.3em] mb-6">Leadership</h2>
-          <div className="relative border-l-2 border-slate-200 pl-8 ml-1">
-            <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-4 border-[#fcfcfc]"></div>
-            <div className="flex justify-between items-start mb-1">
-              <h3 className="text-2xl font-bold uppercase italic leading-tight">Parliament Speaker</h3>
-              <span className="text-xs font-mono font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded">2023 — 2025</span>
+          <div className="space-y-10">
+
+            {/* Parliament Speaker */}
+            <div className="relative border-l-2 border-slate-200 pl-6 sm:pl-8 ml-1">
+              <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-4 border-[#fcfcfc]"></div>
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 mb-1">
+                <h3 className="text-xl sm:text-2xl font-bold uppercase italic leading-tight">Parliament Speaker</h3>
+                <span className="text-xs font-mono font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded self-start">2023 — 2025</span>
+              </div>
+              <p className="text-sm font-bold text-slate-500 mb-6 uppercase tracking-widest font-mono">Student Council • NIS Almaty-Medeu</p>
+
+              <ul className="space-y-4 text-sm text-slate-600 leading-relaxed">
+                <li className="flex gap-3">
+                  <span className="text-blue-500 font-bold">/</span>
+                  <span>Developed a comprehensive student governance methodology and initiated <span className="text-slate-900 font-semibold">100+ event concepts</span>.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-blue-500 font-bold">/</span>
+                  <span>Drafted <span className="text-slate-900 font-semibold">16 legislative acts</span> to institutionalize student council operations.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-blue-500 font-bold">/</span>
+                  <span>Participated in the "Lead to Inspire-2024" Republican Forum of Student Council Leaders in Kyzylorda.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-blue-500 font-bold">/</span>
+                  <span>Supervised class communities (Shanyraks), coordinated point-based competition systems and administrative events.</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-blue-500 font-bold">/</span>
+                  <span>
+                    Established an independent <span className="text-slate-900 font-semibold">Press Office</span> and managed institutional social media presence.
+                    <a
+                      href="https://www.instagram.com/speaker_phm_ala?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-1.5 inline-flex items-center gap-1 text-blue-600 font-bold border-b border-blue-200 hover:border-blue-600 transition-all"
+                    >
+                      Instagram
+                      <span className="text-[10px]">↗</span>
+                    </a>
+                  </span>
+                </li>
+              </ul>
             </div>
-            <p className="text-sm font-bold text-slate-500 mb-6 uppercase tracking-widest font-mono">Student Council • NIS Almaty-Medeu</p>
-            
-            <ul className="space-y-4 text-sm text-slate-600 leading-relaxed">
-<li className="flex gap-3">
-<span className="text-blue-500 font-bold">/</span>
-<span>Developed a comprehensive student governance methodology and initiated <span className="text-slate-900 font-semibold">100+ event concepts</span>.</span>
-</li>
-<li className="flex gap-3">
-<span className="text-blue-500 font-bold">/</span>
-<span>Drafted <span className="text-slate-900 font-semibold">16 legislative acts</span> to institutionalize student council operations.</span>
-</li>
-<li className="flex gap-3">
-<span className="text-blue-500 font-bold">/</span>
-<span>Participated in the “Lead to Inspire-2024” Republican Forum of Student Council Leaders in Kyzylorda.</span>
-</li>
-<li className="flex gap-3">
-<span className="text-blue-500 font-bold">/</span>
-<span>Supervised class communities (Shanyraks), coordinated point-based competition systems and administrative events.</span>
-</li>
-<li className="flex gap-3 items-center">
-<span className="text-blue-500 font-bold">/</span>
-<span>
-Established an independent <span className="text-slate-900 font-semibold">Press Office</span> and managed institutional social media presence.
-<a
-href="https://www.instagram.com/speaker_phm_ala?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-target="_blank"
-rel="noopener noreferrer"
-className="ml-1.5 inline-flex items-center gap-1 text-blue-600 font-bold border-b border-blue-200 hover:border-blue-600 transition-all"
->
-Instagram
-<span className="text-[10px]">↗</span>
-</a>
-</span>
-</li>
-</ul>
+
+            {/* Social Media Specialist */}
+            <div className="relative border-l-2 border-slate-200 pl-6 sm:pl-8 ml-1">
+              <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-[#fcfcfc]"></div>
+              <div className="flex items-start gap-4 mb-1">
+                {/* Logo placeholder */}
+                <div className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center overflow-hidden">
+                  {/* Replace src below with the club logo, e.g. /montefredente-logo.png */}
+                  <span className="text-slate-300 text-[9px] font-bold uppercase tracking-tighter text-center px-1">Logo</span>
+                  {/*
+                  <Image
+                    src="/montefredente-logo.png"
+                    alt="United Montefredente ASD logo"
+                    width={56}
+                    height={56}
+                    className="object-contain"
+                  />
+                  */}
+                </div>
+
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 mb-1">
+                    <h3 className="text-xl sm:text-2xl font-bold uppercase italic leading-tight">Social Media Specialist</h3>
+                    <span className="text-xs font-mono font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded self-start">2025</span>
+                  </div>
+                  <p className="text-sm font-bold text-slate-500 uppercase tracking-widest font-mono">United Montefredente ASD</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
 
         {/* Awards */}
-<section className="mb-6">
-  {/* Увеличил с text-[10px] до text-xs */}
-  <h2 className="text-xs font-bold text-slate-400 uppercase tracking-[0.3em] mb-6">Awards</h2>
-  <div className="grid gap-4">
-    {[
-      { title: "National Astronomy Competition", rank: "1st Place", date: "2022", desc: "Won among 90 participants and 40 research projects." },
-      { title: "IX Al-Farabi Research Conference", rank: "3rd Place", date: "2022", desc: "Published investigation on scattered star clusters and numerical simulations." },
-      { title: "Climate Science Olympiad", rank: "Semifinalist", date: "23 & 24", desc: "Top 55,000 participants globally. Missed finals by only 1 point." }
-    ].map((award, i) => (
-      <div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl">
-        <div className="flex justify-between items-center mb-2">
-          {/* Увеличил с text-sm до text-base */}
-          <h3 className="font-bold uppercase text-base italic">{award.title}</h3>
-          <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-slate-900 text-white rounded">{award.rank}</span>
-        </div>
-        {/* Увеличил с text-xs до text-sm */}
-        <p className="text-sm text-slate-500 leading-relaxed">{award.desc}</p>
-      </div>
-    ))}
-  </div>
-</section>
+        <section className="mb-6">
+          <h2 className="text-xs font-bold text-slate-400 uppercase tracking-[0.3em] mb-6">Awards</h2>
+          <div className="grid gap-4">
+            {[
+              { title: "National Astronomy Competition", rank: "1st Place", date: "2022", desc: "Won among 90 participants and 40 research projects." },
+              { title: "IX Al-Farabi Research Conference", rank: "3rd Place", date: "2022", desc: "Published investigation on scattered star clusters and numerical simulations." },
+              { title: "Climate Science Olympiad", rank: "Semifinalist", date: "23 & 24", desc: "Top 55,000 participants globally. Missed finals by only 1 point." }
+            ].map((award, i) => (
+              <div key={i} className="p-5 sm:p-6 bg-white border border-slate-100 rounded-2xl">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 mb-2">
+                  <h3 className="font-bold uppercase text-base italic">{award.title}</h3>
+                  <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-slate-900 text-white rounded self-start">{award.rank}</span>
+                </div>
+                <p className="text-sm text-slate-500 leading-relaxed">{award.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* Skills & Qualifications */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-slate-100 pt-10">
@@ -155,7 +187,7 @@ Instagram
           </div>
         </section>
 
-        <footer className="mt-20 text-center text-[10px] font-mono text-slate-300 uppercase tracking-[0.5em]">
+        <footer className="mt-16 sm:mt-20 text-center text-[10px] font-mono text-slate-300 uppercase tracking-[0.5em]">
           • Zhangir Yerkassym •
         </footer>
       </main>
