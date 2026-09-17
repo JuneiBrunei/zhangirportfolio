@@ -37,7 +37,7 @@ export default function Home() {
     {/* Описание: убираем лишние межстрочные интервалы */}
     <div className="max-w-2xl">
       <p className="text-lg md:text-xl text-slate-500 leading-snug font-medium">
-        1st year <span className="text-slate-900 font-bold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
+        2nd year <span className="text-slate-900 font-bold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
         Academic researcher and founder with a background in government analysis.
       </p>
     </div>
