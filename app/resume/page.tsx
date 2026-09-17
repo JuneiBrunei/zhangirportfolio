@@ -100,23 +100,19 @@ export default function Resume() {
               <div className="flex items-start gap-4 mb-1">
                 {/* Logo placeholder */}
                 <div className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center overflow-hidden">
-                  {/* Replace src below with the club logo, e.g. /montefredente-logo.png */}
-                  <span className="text-slate-300 text-[9px] font-bold uppercase tracking-tighter text-center px-1">Logo</span>
-                  {/*
-                  <Image
-                    src="/montefredente-logo.png"
-                    alt="United Montefredente ASD logo"
-                    width={56}
-                    height={56}
-                    className="object-contain"
-                  />
-                  */}
-                </div>
+  <Image
+    src="/montefredente-logo.png"
+    alt="United Montefredente ASD logo"
+    width={56}
+    height={56}
+    className="object-contain"
+  />
+</div>
 
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 mb-1">
                     <h3 className="text-xl sm:text-2xl font-bold uppercase italic leading-tight">Social Media Specialist</h3>
-                    <span className="text-xs font-mono font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded self-start">2025</span>
+                    <span className="text-xs font-mono font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded self-start">2026</span>
                   </div>
                   <p className="text-sm font-bold text-slate-500 uppercase tracking-widest font-mono">United Montefredente ASD</p>
                 </div>
