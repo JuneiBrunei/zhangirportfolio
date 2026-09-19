@@ -82,7 +82,7 @@ export default function Publications() {
 
   return (
     <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100">
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-16 animate-fade-in">
 
         {/* Navigation */}
         <Link href="/" className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-10 sm:mb-12 block hover:opacity-70 transition-opacity">
