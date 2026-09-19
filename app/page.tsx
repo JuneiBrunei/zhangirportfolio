@@ -102,29 +102,43 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="md:col-span-1 p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col relative min-h-[220px]">
-  <div className="relative z-10">
-    <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-white-400 mb-6">
-      Expertise & Skills
-    </h2>
-    <div className="flex flex-wrap gap-3">
-      {[
-        'Econometrics',
-        'Data analysis',
-        'Political research',
-        'Institutional Design',
-        'Public Speaking',
-        'SMM & Canva',
-        'Strategic Mgmt'
-      ].map((skill) => (
-        <span 
-          key={skill} 
-          className="text-[13px] px-4 py-2 border border-slate-700 rounded-xl font-bold uppercase tracking-tight hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 cursor-default shadow-sm"
-        >
-          {skill}
-        </span>
-      ))}
-    </div>
+        {/* Expertise & Skills */}
+<div className="p-8 rounded-[2rem] bg-slate-900 text-white mb-10">
+  <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-8">
+    Expertise & Skills
+  </h2>
+
+  <div className="flex flex-col gap-7">
+    {[
+      {
+        group: 'Research & Analysis',
+        items: ['Econometrics', 'Data Analysis', 'Political Research', 'Institutional Design'],
+      },
+      {
+        group: 'Engineering',
+        items: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Git', 'Vercel'],
+      },
+      {
+        group: 'Communication',
+        items: ['Public Speaking', 'Strategic Mgmt', 'SMM & Canva'],
+      },
+    ].map(({ group, items }) => (
+      <div key={group}>
+        <h3 className="text-[10px] font-mono uppercase tracking-[0.2em] text-blue-400 mb-3">
+          {group}
+        </h3>
+        <div className="flex flex-wrap gap-2.5">
+          {items.map((skill) => (
+            <span
+              key={skill}
+              className="text-[13px] px-4 py-2 border border-slate-700 rounded-xl font-bold uppercase tracking-tight hover:bg-blue-600 hover:border-blue-600 transition-colors duration-300 cursor-default"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    ))}
   </div>
 </div>
         {/* Footer */}

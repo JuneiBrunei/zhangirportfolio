@@ -13,7 +13,7 @@ export default function Projects() {
         "Established 6 media football regulations to standardize the league's operations."
       ],
       links: [
-        { label: "Website", url: "https://nis-media-league.vercel.app/" },
+        { label: "Website", url: "https://nml-medeu.com" },
         { label: "Instagram", url: "https://www.instagram.com/nis_media_league/" }
       ]
     },
