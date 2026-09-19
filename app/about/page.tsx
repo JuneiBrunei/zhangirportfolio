@@ -133,7 +133,7 @@ export default function AboutMe() {
   </div>
 </div>
         <footer className="mt-20 text-center text-[10px] font-mono text-slate-300 uppercase tracking-[0.5em]">
-          • Character Unlocked •
+          • About me •
         </footer>
       </main>
     </div>

@@ -167,7 +167,8 @@ export default function Resume() {
                 { name: "English", level: "IELTS 8.0 / C1", width: "w-[95%]" },
                 { name: "Kazakh", level: "Native", width: "w-[100%]" },
                 { name: "Russian", level: "Native", width: "w-[100%]" },
-                { name: "Italian / German", level: "A1/A2", width: "w-[30%]" }
+                { name: "German", level: "A2", width: "w-[30%]" },
+                { name: "Italian", level: "A2", width: "w-[30%]" }
               ].map((lang) => (
                 <div key={lang.name}>
                   <div className="flex justify-between text-[11px] font-bold uppercase mb-1.5 tracking-tight">
