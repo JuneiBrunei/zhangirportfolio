@@ -26,11 +26,11 @@ export default function Home() {
   <div className="flex flex-col md:flex-row gap-6 items-center">
     
     {/* 4. Фото: делаем НЕ квадратным, а чуть приплюснутым, чтобы поднять контент ниже */}
-    <div className="relative w-full h-[350px] md:w-[280px] md:h-[350px] rounded-[2.5rem] overflow-hidden bg-slate-100 border border-slate-100 shadow-sm flex items-center justify-center">
+    <div className="relative w-full max-w-[280px] h-[420px] mx-auto md:w-[280px] md:h-[380px] rounded-[2.5rem] overflow-hidden bg-slate-100 border border-slate-100 shadow-sm">
   <img 
     src="/met.png" 
     alt="Zhangir Yerkassym" 
-    className="w-full h-full object-contain"
+    className="w-full h-full object-cover object-center"
   />
 </div>
 
