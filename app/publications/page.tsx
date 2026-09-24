@@ -21,7 +21,7 @@ interface IndependentResearch {
 export default function Publications() {
   const published: PublishedWork[] = [
     {
-      title: "FOOD PRODUCTS IN KAZAKHSTAN: CAUSES AND SOLUTIONS",
+      title: "FOOD PRODUCTS IN KAZAKHSTAN OVER THE PAST 3 YEARS: CAUSES AND SOLUTIONS TO THE PROBLEM OF PRICE INCREASES",
       source: "Central Asian Scientific Journal",
       date: "Sep 2024",
       link: "https://cajournal.kz/vol/2024/vol4(23).pdf",
