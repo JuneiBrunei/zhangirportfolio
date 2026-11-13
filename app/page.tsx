@@ -78,14 +78,15 @@ export default function Home() {
             <p className="text-[10px] font-bold uppercase opacity-60 italic">Alma Mater Studiorum</p>
           </div>
 
-          <div className="p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[200px]">
-  <div className="text-3xl italic font-black text-slate-200">01.</div>
-  <div>
-    <h3 className="font-bold text-lg leading-tight uppercase">Education</h3>
-    <p className="text-xs text-slate-500 mt-1 italic">
-      2025 Graduate of NIS Almaty-Medeu. Awarded Altyn Belgi for academic excellence.
-    </p>
+          <div className="p-5 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 transition-all relative overflow-hidden">
+  <div className="flex flex-wrap justify-between items-center gap-2 mb-3">
+    <span className="text-sm sm:text-base font-black text-slate-900 uppercase tracking-widest flex items-center gap-2">
+      🌱 Education
+    </span>
   </div>
+  <p className="text-slate-500 text-sm sm:text-base leading-relaxed text-left max-w-2xl">
+    2025 Graduate of NIS Almaty-Medeu. Awarded Altyn Belgi for academic excellence.
+  </p>
 </div>
 
           <div className="md:col-span-2 p-8 rounded-[2rem] bg-slate-50 border border-slate-200 flex flex-col justify-between group">
