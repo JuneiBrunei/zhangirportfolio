@@ -18,6 +18,13 @@ interface IndependentResearch {
   description: string;
 }
 
+interface MethodologicalGuide {
+  title: string;
+  version: string;
+  link: string;
+  description: string;
+}
+
 export default function Publications() {
   const published: PublishedWork[] = [
     {
@@ -48,6 +55,15 @@ export default function Publications() {
       type: "Political Science & Education",
       link: "https://docs.google.com/document/d/1HDlKMyaB9EeHCTIEoWn_7x1cUg-_jPj-X9BZAd3flPI/edit?usp=sharing",
       description: "A political science proposal for transitioning student governance to a parliamentary model. The research evaluates methods to minimize administrative interference and institutionalize student leadership, advocating for a shift from symbolic representation to a genuine democratic framework within educational institutions."
+    }
+  ];
+
+  const methodologies: MethodologicalGuide[] = [
+    {
+      title: "Methodology of Organization and Activity of Student Governance",
+      version: "Edition 1.0",
+      link: "https://docs.google.com/document/d/1Vu7-8OhIahfsHGV9GCHw_2BuNjJKKLG2/edit?usp=sharing&ouid=116941379869684537483&rtpof=true&sd=true",
+      description: "A comprehensive methodological guide and standardized framework for establishing transparent student governance in educational institutions. It introduces a separation of powers between a legislative Parliament and executive Government, clear accountability cycles, impeachment procedures, and adaptable implementation guidelines."
     }
   ];
 
@@ -140,7 +156,45 @@ export default function Publications() {
           </div>
         </section>
 
-        {/* Section 2: Independent Research */}
+        {/* Section 2: Methodological Guides & Standards */}
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-[13px] sm:text-[14px] font-black text-slate-900 uppercase tracking-[0.2em] mb-6 sm:mb-8 flex items-center gap-3">
+            Methodological Guides <span className="h-[1px] w-12 bg-blue-600"></span>
+          </h2>
+          <div className="flex flex-col gap-6 sm:gap-8">
+            {methodologies.map((item, i) => (
+              <div
+                key={i}
+                className="p-5 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 transition-all relative overflow-hidden"
+              >
+                <div className="flex flex-wrap justify-between items-center gap-2 mb-4">
+                  <span className="text-[10px] font-black px-3 py-1 bg-slate-900 text-white rounded-lg uppercase tracking-widest">
+                    {item.version}
+                  </span>
+                </div>
+
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="group block">
+                  <h3 className="text-xl sm:text-2xl font-black leading-tight mb-4 group-hover:text-blue-600 uppercase italic transition-colors text-left">
+                    {item.title}
+                  </h3>
+                </a>
+
+                <p className="text-slate-500 text-sm sm:text-base leading-relaxed text-left max-w-2xl mb-6">{item.description}</p>
+
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-bold text-blue-600 hover:opacity-70 transition-opacity"
+                >
+                  Read the guide ↗
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Section 3: Independent Research */}
         <section className="mb-16 sm:mb-20">
           <h2 className="text-[13px] sm:text-[14px] font-black text-slate-900 uppercase tracking-[0.2em] mb-6 sm:mb-8 flex items-center gap-3">
             Independent Research <span className="h-[1px] w-12 bg-blue-600"></span>

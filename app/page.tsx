@@ -79,14 +79,14 @@ export default function Home() {
           </div>
 
           <div className="p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[200px]">
-            <div className="text-3xl italic font-black text-slate-200">01.</div>
-            <div>
-              <h3 className="font-bold text-lg leading-tight uppercase">Science</h3>
-              <p className="text-xs text-slate-500 mt-1 italic">
-                1st Place National Astronomy Competition & 3rd Place at IX Republican Youth Research Conference "Al-Farabi".
-              </p>
-            </div>
-          </div>
+  <div className="text-3xl italic font-black text-slate-200">01.</div>
+  <div>
+    <h3 className="font-bold text-lg leading-tight uppercase">Education</h3>
+    <p className="text-xs text-slate-500 mt-1 italic">
+      2025 Graduate of NIS Almaty-Medeu. Awarded Altyn Belgi for academic excellence.
+    </p>
+  </div>
+</div>
 
           <div className="md:col-span-2 p-8 rounded-[2rem] bg-slate-50 border border-slate-200 flex flex-col justify-between group">
              <div className="flex justify-between items-start">
