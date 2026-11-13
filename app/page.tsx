@@ -79,13 +79,14 @@ export default function Home() {
           </div>
 
           <div className="p-5 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 transition-all relative overflow-hidden">
-  <div className="flex flex-wrap justify-between items-center gap-2 mb-3">
-    <span className="text-sm sm:text-base font-black text-slate-900 uppercase tracking-widest flex items-center gap-2">
-      🌱 Education
-    </span>
+  <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-1.5">
+    <span>🌱</span> Education
   </div>
+  <h3 className="text-xl sm:text-2xl font-black leading-tight mb-4 group-hover:text-blue-600 uppercase italic transition-colors text-left">
+    NIS ALMATY-MEDEU
+  </h3>
   <p className="text-slate-500 text-sm sm:text-base leading-relaxed text-left max-w-2xl">
-    2025 Graduate of NIS Almaty-Medeu. Awarded Altyn Belgi for academic excellence.
+    2025 Graduate. Awarded Altyn Belgi for academic excellence.
   </p>
 </div>
 
