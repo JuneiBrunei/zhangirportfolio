@@ -79,8 +79,11 @@ export default function Home() {
           </div>
 
           <div className="p-5 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 transition-all relative overflow-hidden">
-  <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-1.5">
-    <span>🌱</span> EDUCATION
+  <div className="flex justify-between items-center mb-2">
+    <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
+      EDUCATION
+    </span>
+    <span className="text-xs">🌱</span>
   </div>
 
   <h3 className="text-lg sm:text-xl font-black leading-tight mb-3 group-hover:text-blue-600 uppercase italic transition-colors text-left">
